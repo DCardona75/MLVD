@@ -225,6 +225,60 @@ button {
     padding: 0px;
 }
 
+.locale-switcher {
+    --buttonSpacing: 7px;
+    display: flex;
+    align-items: stretch;
+    margin: 0 calc(var(--buttonSpacing) * -1) 0 0;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px
+}
+.align-items-center {
+    align-items: center !important;
+}
+
+.locale-switcher li {
+    display: flex;
+    align-items: center;
+    line-height: 1.7
+}
+
+.locale-switcher li.active {
+    background-color: #ebebeb;
+    font-weight: 500;
+    pointer-events: none
+}
+
+.locale-switcher li.active a::before {
+    content: ""
+}
+
+.locale-switcher li:hover {
+    background-color: #ebebeb
+}
+
+.locale-switcher li a {
+    display: flex;
+    align-items: center;
+    padding: 5px var(--buttonSpacing);
+    color: #414042
+}
+
+.locale-switcher li a:hover {
+    text-decoration: none
+}
+
+.locale-switcher li a::before {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0 var(--buttonSpacing) 0 0;
+    
+    background-size: contain;
+}
+.d-flex {
+    display: flex !important;
+}
 
 /* header section start */
 
@@ -371,6 +425,7 @@ button {
     font-size: 16px;
     color: #ffffff;
     text-align: center;
+    
 }
 
 .read_bt {
@@ -415,6 +470,7 @@ button {
     font-size: 40px;
     color: #1f1f1f;
     font-weight: bold;
+    
 }
 
 .services_text {
@@ -423,6 +479,8 @@ button {
     font-size: 16px;
     color: #1f1f1f;
     margin: 0px;
+    text-indent: 30px;
+    padding: .2%;
 }
 
 .services_section_2 {
@@ -896,7 +954,7 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/footer-bg.png);
+    background-image: url(../images/footer-mobile-bg.png);
     height: auto;
     padding-top: 250px;
     background-size: 100% 100%;
