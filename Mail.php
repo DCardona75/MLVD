@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
  
     // recipient email address
-    $to = "rgrremodelingllc@gmail.com";
+    $to = "contact@iglesialavozdediosinc.org";
 
     
     // Do something with the data, such as sending an email
